@@ -1,0 +1,49 @@
+* {
+  background-color: rgb(204, 228, 167);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1em solid black;
+}
+
+.rectangle {
+  height: 100px;
+  width: 200px;
+  background-color: rgb(25, 157, 201);
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(25, 157, 201);
+  margin: 10px;
+  border-radius: 5px;
+}
+.largecircle {
+  height: 120px;
+  width: 120px;
+  background-color: #a33898;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.mediumcircle {
+  height: 80px;
+  width: 80px;
+  background-color: blueviolet;
+  border-radius: 50%;
+}
+
+.smallcircle {
+  height: 20px;
+  width: 20px;
+  background-color: deeppink;
+  border-radius: 50%;
+}
