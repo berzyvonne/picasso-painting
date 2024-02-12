@@ -1,14 +1,47 @@
 * {
-  background-color: rgb(204, 228, 167);
+  background-color: rgb(229, 235, 220);
+}
+
+@media only screen and (min-width: 320px) {
+  .wrapper {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    width: 700px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1050) {
+  .wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  form {
+    width: 750px;
+    margin: 0 auto;
+  }
 }
 
 .flex-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  border: 1em solid black;
+  align-items: left;
+  border: 0.5em solid black;
+  position: relative;
+  justify-content: center;
+  top: 200px;
+  overflow: scroll;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
 }
 
 .rectangle {
@@ -17,21 +50,29 @@
   background-color: rgb(25, 157, 201);
   margin: 10px;
   border-radius: 5px;
+  left: 50px;
+  z-index: 1;
 }
 
 .square {
   height: 100px;
   width: 100px;
-  background-color: rgb(25, 157, 201);
+  background-color: rgb(113, 108, 167);
   margin: 10px;
   border-radius: 5px;
+  z-index: 1;
+  top: 50px;
+  left: 200px;
 }
+
 .largecircle {
   height: 120px;
   width: 120px;
   background-color: #a33898;
   border-radius: 50%;
   z-index: 2;
+  left: 280px;
+  margin: 10px;
 }
 
 .mediumcircle {
@@ -39,6 +80,10 @@
   width: 80px;
   background-color: blueviolet;
   border-radius: 50%;
+  left: 150px;
+  margin: 10px;
+  top: 10px;
+  z-index: 3;
 }
 
 .smallcircle {
@@ -46,4 +91,28 @@
   width: 20px;
   background-color: deeppink;
   border-radius: 50%;
+  left: 125px;
+  top: 75px;
+  margin: 10px;
+  z-index: 3;
+}
+
+.rectangle,
+.square,
+.largecircle,
+.mediumcircle,
+.smallcircle {
+  position: fixed;
+}
+
+form {
+  margin: 4em;
+  padding: 5%;
+  border: 0.25em solid darkslategray;
+  color: darkslategray;
+  z-index: 10;
+}
+
+form h2 {
+  color: darkslategray;
 }

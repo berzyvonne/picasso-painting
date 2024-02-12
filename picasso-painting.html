@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="picasso-painting.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="picasso-painting.css" />
     <title>Document</title>
+  </head>
+  <body>
+    <section class="wrapper">
+      <div class="rectangle"></div>
+      <div class="square"></div>
+      <div class="largecircle"></div>
+      <div class="mediumcircle"></div>
+      <div class="smallcircle"></div>
+    </section>
 
-</head>
-<body>
-    <section class="flex-container">
-    <div class="rectangle"></div>
-    <div class="square"></div>
-    <div class="rectangle"></div>
-    <div class="square"></div>
-    <div class="rectangle"></div>
-    <div class="largecircle"></div>
-    <div class="mediumcircle"></div>
-    <div class="smallcircle"></div>
-    <div class="smallcircle"></div>
-    <div class="smallcircle"></div>
-    <div class="smallcircle"></div>
-</section>
-</body>
+    <form class="flex-container" action="./form-submitted.html" method="get">
+      <h2>Interested in learning more?</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br /><br />
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
 </html>
